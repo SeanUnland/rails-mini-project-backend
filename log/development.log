@@ -1488,3 +1488,683 @@ Processing by SongsController#index as */*
 Completed 200 OK in 32ms (Views: 20.0ms | ActiveRecord: 4.9ms | Allocations: 1677)
 
 
+Started GET "/songs/" for ::1 at 2020-11-16 18:06:15 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (2.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 47ms (Views: 36.7ms | ActiveRecord: 2.6ms | Allocations: 1675)
+
+
+Started GET "//songs/" for ::1 at 2020-11-16 18:06:18 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 1.4ms | Allocations: 1619)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 09:43:24 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (8.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 70ms (Views: 50.3ms | ActiveRecord: 8.1ms | Allocations: 1677)
+
+
+Started GET "/songs/" for ::1 at 2020-11-17 09:46:37 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (4.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 47ms (Views: 38.8ms | ActiveRecord: 4.0ms | Allocations: 1617)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 10:16:09 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (7.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 101ms (Views: 72.3ms | ActiveRecord: 7.3ms | Allocations: 1677)
+
+
+Started GET "/songs/" for ::1 at 2020-11-17 10:16:13 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.4ms | Allocations: 1617)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 10:24:08 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (5.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 83ms (Views: 53.0ms | ActiveRecord: 5.4ms | Allocations: 1677)
+
+
+Started DELETE "//songs/16" for ::1 at 2020-11-17 10:24:14 -0500
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"16", "song"=>{}}
+  [1m[36mSong Load (14.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[35m (4.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (8.4ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 254ms (ActiveRecord: 40.1ms | Allocations: 2476)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 10:24:14 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (6.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 18.5ms | ActiveRecord: 6.4ms | Allocations: 1488)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 10:24:18 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.9ms | Allocations: 1488)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 10:32:10 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (2.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 50ms (Views: 37.9ms | ActiveRecord: 2.0ms | Allocations: 1546)
+
+
+Started POST "//songs/" for ::1 at 2020-11-17 10:32:23 -0500
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "song"=>{"title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19"}}
+Started GET "//songs/" for ::1 at 2020-11-17 10:32:24 -0500
+  [1m[35m (16.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[36mSong Create (36.8ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Red Eye (feat. Jimmy Nort)"], ["artist", "Analog Robot"], ["time", "4:19"], ["created_at", "2020-11-17 15:32:24.173239"], ["updated_at", "2020-11-17 15:32:24.173239"]]
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[35m (28.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+Completed 201 Created in 483ms (Views: 70.5ms | ActiveRecord: 81.4ms | Allocations: 4802)
+
+
+Processing by SongsController#index as */*
+  [1m[36mSong Load (26.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 64ms (Views: 34.6ms | ActiveRecord: 26.7ms | Allocations: 1741)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 10:52:25 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (13.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 50ms (Views: 34.1ms | ActiveRecord: 13.5ms | Allocations: 1679)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 10:59:42 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (4.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 106ms (Views: 92.1ms | ActiveRecord: 4.6ms | Allocations: 1679)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:01:27 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 3.9ms | ActiveRecord: 0.4ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:03:53 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (5.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 15.9ms | ActiveRecord: 5.7ms | Allocations: 1621)
+
+
+Started PUT "//songs/17" for ::1 at 2020-11-17 11:05:17 -0500
+Processing by SongsController#update as */*
+  Parameters: {"id"=>"17", "title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "created_at"=>"2020-11-17T15:32:24.173Z", "updated_at"=>"2020-11-17T15:32:24.173Z", "song"=>{"id"=>"17", "title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "created_at"=>"2020-11-17T15:32:24.173Z", "updated_at"=>"2020-11-17T15:32:24.173Z"}}
+  [1m[36mSong Load (10.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+[31mUnpermitted parameters: :id, :created_at, :updated_at[0m
+Completed 200 OK in 156ms (Views: 0.4ms | ActiveRecord: 14.4ms | Allocations: 1060)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:05:17 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 20.1ms | ActiveRecord: 0.4ms | Allocations: 1623)
+
+
+Started PUT "//songs/17" for ::1 at 2020-11-17 11:05:24 -0500
+Processing by SongsController#update as */*
+  Parameters: {"id"=>"17", "title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "created_at"=>"2020-11-17T15:32:24.173Z", "updated_at"=>"2020-11-17T15:32:24.173Z", "song"=>{"id"=>"17", "title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "created_at"=>"2020-11-17T15:32:24.173Z", "updated_at"=>"2020-11-17T15:32:24.173Z"}}
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+[31mUnpermitted parameters: :id, :created_at, :updated_at[0m
+Completed 200 OK in 27ms (Views: 2.4ms | ActiveRecord: 0.9ms | Allocations: 1022)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:05:24 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 1.0ms | Allocations: 1623)
+
+
+Started PUT "//songs/17" for ::1 at 2020-11-17 11:05:43 -0500
+Processing by SongsController#update as */*
+  Parameters: {"id"=>"17", "title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "created_at"=>"2020-11-17T15:32:24.173Z", "updated_at"=>"2020-11-17T15:32:24.173Z", "song"=>{"id"=>"17", "title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "created_at"=>"2020-11-17T15:32:24.173Z", "updated_at"=>"2020-11-17T15:32:24.173Z"}}
+  [1m[36mSong Load (9.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+[31mUnpermitted parameters: :id, :created_at, :updated_at[0m
+Completed 200 OK in 37ms (Views: 2.6ms | ActiveRecord: 9.1ms | Allocations: 1022)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:05:43 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (3.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 14.5ms | ActiveRecord: 3.6ms | Allocations: 1623)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:07:51 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 1186ms (Views: 1182.2ms | ActiveRecord: 1.1ms | Allocations: 1628)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:08:03 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.7ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:08:26 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (4.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 51ms (Views: 45.5ms | ActiveRecord: 4.1ms | Allocations: 1621)
+
+
+Started DELETE "//songs/17" for ::1 at 2020-11-17 11:08:30 -0500
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"17", "song"=>{}}
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[35m (3.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (5.9ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 47ms (ActiveRecord: 17.5ms | Allocations: 2448)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:08:30 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (3.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 3.1ms | Allocations: 1488)
+
+
+Started POST "//songs/" for ::1 at 2020-11-17 11:08:39 -0500
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "song"=>{"title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19"}}
+  [1m[35m (6.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[36mSong Create (6.6ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Red Eye (feat. Jimmy Nort)"], ["artist", "Analog Robot"], ["time", "4:19"], ["created_at", "2020-11-17 16:08:39.402339"], ["updated_at", "2020-11-17 16:08:39.402339"]]
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+Completed 201 Created in 75ms (Views: 7.1ms | ActiveRecord: 15.2ms | Allocations: 2566)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:08:39 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (3.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 7.5ms | ActiveRecord: 3.6ms | Allocations: 1621)
+
+
+Started PUT "//songs/17" for ::1 at 2020-11-17 11:08:52 -0500
+Processing by SongsController#update as */*
+  Parameters: {"id"=>"17", "title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "created_at"=>"2020-11-17T15:32:24.173Z", "updated_at"=>"2020-11-17T15:32:24.173Z", "song"=>{"id"=>"17", "title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "created_at"=>"2020-11-17T15:32:24.173Z", "updated_at"=>"2020-11-17T15:32:24.173Z"}}
+  [1m[36mSong Load (18.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+Completed 404 Not Found in 54ms (ActiveRecord: 18.8ms | Allocations: 656)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=17):
+  
+app/controllers/songs_controller.rb:44:in `set_song'
+Started GET "//songs/" for ::1 at 2020-11-17 11:08:53 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 1620)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:16:16 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 1.5ms | Allocations: 1679)
+
+
+Started PUT "//songs/18" for ::1 at 2020-11-17 11:29:08 -0500
+Processing by SongsController#update as */*
+  Parameters: {"id"=>"18", "title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "created_at"=>"2020-11-17T16:08:39.402Z", "updated_at"=>"2020-11-17T16:08:39.402Z", "song"=>{"id"=>"18", "title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "created_at"=>"2020-11-17T16:08:39.402Z", "updated_at"=>"2020-11-17T16:08:39.402Z"}}
+  [1m[36mSong Load (1.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+[31mUnpermitted parameters: :id, :created_at, :updated_at[0m
+Completed 200 OK in 29ms (Views: 3.0ms | ActiveRecord: 2.3ms | Allocations: 1106)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:29:08 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.7ms | Allocations: 1625)
+
+
+Started PUT "//songs/18" for ::1 at 2020-11-17 11:29:10 -0500
+Processing by SongsController#update as */*
+  Parameters: {"id"=>"18", "title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "created_at"=>"2020-11-17T16:08:39.402Z", "updated_at"=>"2020-11-17T16:08:39.402Z", "song"=>{"id"=>"18", "title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "created_at"=>"2020-11-17T16:08:39.402Z", "updated_at"=>"2020-11-17T16:08:39.402Z"}}
+  [1m[36mSong Load (4.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+[31mUnpermitted parameters: :id, :created_at, :updated_at[0m
+Completed 200 OK in 30ms (Views: 5.4ms | ActiveRecord: 4.0ms | Allocations: 1022)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:29:10 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.8ms | Allocations: 1623)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:30:31 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.5ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:37:55 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 1.6ms | Allocations: 1679)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:41:19 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.8ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:46:00 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.6ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:46:20 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 18.9ms | ActiveRecord: 0.6ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:46:28 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 1.3ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:46:57 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (4.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 4.3ms | Allocations: 1621)
+
+
+Started DELETE "//songs/18" for ::1 at 2020-11-17 11:49:44 -0500
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"18", "song"=>{}}
+  [1m[36mSong Load (2.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.6ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 51ms (ActiveRecord: 11.1ms | Allocations: 2476)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:49:44 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.5ms | Allocations: 1488)
+
+
+Started POST "//songs/" for ::1 at 2020-11-17 11:49:53 -0500
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "song"=>{"title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[36mSong Create (4.8ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Red Eye (feat. Jimmy Nort)"], ["artist", "Analog Robot"], ["time", "4:19"], ["created_at", "2020-11-17 16:49:53.416404"], ["updated_at", "2020-11-17 16:49:53.416404"]]
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+Completed 201 Created in 27ms (Views: 3.2ms | ActiveRecord: 7.3ms | Allocations: 2566)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:49:54 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (3.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 3.6ms | Allocations: 1621)
+
+
+Started DELETE "//songs/19" for ::1 at 2020-11-17 11:51:19 -0500
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"19", "song"=>{}}
+  [1m[36mSong Load (9.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[35m (6.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (6.7ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[35m (26.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 81ms (ActiveRecord: 49.4ms | Allocations: 2448)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:51:19 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.5ms | Allocations: 1488)
+
+
+Started POST "//songs/" for ::1 at 2020-11-17 11:51:27 -0500
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "song"=>{"title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19"}}
+  [1m[35m (12.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[36mSong Create (5.7ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Red Eye (feat. Jimmy Nort)"], ["artist", "Analog Robot"], ["time", "4:19"], ["created_at", "2020-11-17 16:51:27.693863"], ["updated_at", "2020-11-17 16:51:27.693863"]]
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+Completed 201 Created in 46ms (Views: 1.7ms | ActiveRecord: 25.4ms | Allocations: 2565)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:51:28 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.9ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:55:43 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:56:17 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 111ms (Views: 107.5ms | ActiveRecord: 1.9ms | Allocations: 1624)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:56:57 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.5ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 11:58:41 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 1.3ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:01:11 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.8ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:01:49 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.5ms | Allocations: 1621)
+
+
+Started DELETE "//songs/20" for ::1 at 2020-11-17 12:01:58 -0500
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"20", "song"=>{}}
+  [1m[36mSong Load (5.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (2.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 22ms (ActiveRecord: 9.1ms | Allocations: 2448)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:01:59 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 1.5ms | Allocations: 1488)
+
+
+Started POST "//songs/" for ::1 at 2020-11-17 12:02:06 -0500
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "song"=>{"title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19"}}
+  [1m[35m (20.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[36mSong Create (11.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Red Eye (feat. Jimmy Nort)"], ["artist", "Analog Robot"], ["time", "4:19"], ["created_at", "2020-11-17 17:02:06.725819"], ["updated_at", "2020-11-17 17:02:06.725819"]]
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[35m (13.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+Completed 201 Created in 56ms (Views: 2.7ms | ActiveRecord: 45.5ms | Allocations: 2566)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:02:07 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (2.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 2.0ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:04:39 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (2.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 2.8ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:04:49 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (2.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 2.5ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:12:58 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 1.1ms | Allocations: 1679)
+
+
+Started DELETE "//songs/21" for ::1 at 2020-11-17 12:13:03 -0500
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"21", "song"=>{}}
+  [1m[36mSong Load (5.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.7ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 27ms (ActiveRecord: 11.1ms | Allocations: 2476)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:13:03 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 7.1ms | ActiveRecord: 0.6ms | Allocations: 1488)
+
+
+Started POST "//songs/" for ::1 at 2020-11-17 12:13:11 -0500
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "song"=>{"title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19"}}
+  [1m[35m (5.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[36mSong Create (39.0ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Red Eye (feat. Jimmy Nort)"], ["artist", "Analog Robot"], ["time", "4:19"], ["created_at", "2020-11-17 17:13:11.479106"], ["updated_at", "2020-11-17 17:13:11.479106"]]
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+Completed 201 Created in 66ms (Views: 0.5ms | ActiveRecord: 56.8ms | Allocations: 2566)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:13:11 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.5ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:13:26 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 1.2ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:14:12 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 1.3ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:14:27 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (3.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 16.3ms | ActiveRecord: 3.0ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:17:29 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (3.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 3.8ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:17:40 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.7ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:17:59 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.6ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:18:02 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.7ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:18:14 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.6ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:18:39 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (4.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 4.8ms | Allocations: 1621)
+
+
+Started DELETE "//songs/22" for ::1 at 2020-11-17 12:18:59 -0500
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"22", "song"=>{}}
+  [1m[36mSong Load (2.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.9ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 5.4ms | Allocations: 2448)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:18:59 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 1.5ms | Allocations: 1488)
+
+
+Started POST "//songs/" for ::1 at 2020-11-17 12:19:08 -0500
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19", "song"=>{"title"=>"Red Eye (feat. Jimmy Nort)", "artist"=>"Analog Robot", "time"=>"4:19"}}
+  [1m[35m (16.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[36mSong Create (14.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Red Eye (feat. Jimmy Nort)"], ["artist", "Analog Robot"], ["time", "4:19"], ["created_at", "2020-11-17 17:19:08.179795"], ["updated_at", "2020-11-17 17:19:08.179795"]]
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[35m (10.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+Completed 201 Created in 59ms (Views: 1.5ms | ActiveRecord: 41.4ms | Allocations: 2565)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:19:08 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 1.5ms | Allocations: 1621)
+
+
+Started GET "//songs/" for ::1 at 2020-11-17 12:19:15 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.9ms | Allocations: 1621)
+
+
